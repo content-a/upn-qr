@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70a78d81-afa6-4db0-9048-40657e7ab0e8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/models/UpnQr.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/UpnQr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/upn-qr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/upn-qr.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
@@ -39,16 +41,36 @@
       <option name="presentableId" value="Default" />
       <updated>1603186479760</updated>
       <workItem from="1603186481025" duration="862000" />
+      <workItem from="1603187684503" duration="209000" />
     </task>
+    <task id="LOCAL−00001" summary="First commit">
+      <created>1603187727933</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1603187727933</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1603187726698">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603187726698" />
     <state x="794" y="443" key="NewPhpFileDialog" timestamp="1603186856666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603186856666" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1603187813699">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603187813699" />
   </component>
 </project>
