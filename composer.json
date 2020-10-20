@@ -2,6 +2,7 @@
     "name": "rolecode/upn-qr",
     "description": "Generate upn qr image for Slovenia.",
     "type": "library",
+    "license": "MIT",
     "require": {
 
     }
