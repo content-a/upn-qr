@@ -1,5 +1,5 @@
 {
-    "name": "roklesjak/qpn-qr",
+    "name": "rolecode/qpn-qr",
     "description": "Generate upn qr image for Slovenia.",
     "type": "library",
     "require": {
