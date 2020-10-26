@@ -1,2 +1,4 @@
 /vendor/
 upn_example.png
+.env
+log.txt
