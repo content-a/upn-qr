@@ -20,18 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70a78d81-afa6-4db0-9048-40657e7ab0e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/BankTransaction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Models/ReadInboxTransaction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ReadInboxTransactionTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/upn-qr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/upn-qr.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/ReadInboxTransaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/ReadInboxTransaction.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +81,6 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/type" />
       <path value="$PROJECT_DIR$/vendor/dasprid/enum" />
       <path value="$PROJECT_DIR$/vendor/khanamiryan/qrcode-detector-decoder" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
       <path value="$PROJECT_DIR$/vendor/symfony/string" />
       <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
@@ -116,6 +109,7 @@
       <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
       <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
       <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
     </include_path>
   </component>
   <component name="ProjectId" id="1j8X1jLnwZAcAJpjIYn8PCNc6VJ" />
@@ -155,7 +149,9 @@
       <workItem from="1603262288457" duration="14055000" />
       <workItem from="1603346486048" duration="8951000" />
       <workItem from="1603434353216" duration="6920000" />
-      <workItem from="1603695172245" duration="10128000" />
+      <workItem from="1603695172245" duration="12188000" />
+      <workItem from="1603782077180" duration="24000" />
+      <workItem from="1603782151580" duration="1250000" />
     </task>
     <task id="LOCAL−00001" summary="First commit">
       <created>1603187727933</created>
@@ -187,7 +183,13 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1603353409866</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="First commit">
+      <created>1603706124615</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1603706124615</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,12 +205,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <option name="LAST_COMMIT_MESSAGE" value="First commit" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="715" y="343" key="#Notifications" timestamp="1603782098872">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="715" y="343" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1603782098872" />
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603704426327">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -217,22 +224,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603443503930" />
-    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1603353408573">
+    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1603706123705">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603353408573" />
+    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603706123705" />
     <state x="738" y="432" key="ComposerInitDialogKey" timestamp="1603263060247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="738" y="432" key="ComposerInitDialogKey/0.0.1920.1040@0.0.1920.1040" timestamp="1603263060247" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1603783173446">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603783173446" />
     <state x="794" y="443" key="NewPhpFileDialog" timestamp="1603697843446">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603697843446" />
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1603353411631">
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1603706127469">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603353411631" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603706127469" />
     <state x="544" y="0" width="1392" height="711" key="dock-window-1" timestamp="1603274829571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

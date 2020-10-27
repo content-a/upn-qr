@@ -83,7 +83,7 @@ class ReadInboxTransaction {
                 }
 
                 // After successfull read mark message as seen.
-//                $message->setFlag(['Seen']);
+                $message->setFlag(['Seen']);
             }
         }
 
