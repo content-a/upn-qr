@@ -61,6 +61,12 @@ class BankTransaction {
         return substr($this->reference, 4);
     }
 
+
+    /**
+     * Return amount.
+     *
+     * @return  float
+     */
     public function getAmount(){
         return $this->amount;
     }
