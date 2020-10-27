@@ -60,4 +60,8 @@ class BankTransaction {
     public function getReferenceNumber(){
         return substr($this->reference, 4);
     }
+
+    public function getAmount(){
+        return $this->amount;
+    }
 }
