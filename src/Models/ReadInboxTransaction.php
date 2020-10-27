@@ -36,8 +36,6 @@ class ReadInboxTransaction {
 
         $folders = $this->client->getFolders();
 
-//        $myfile = fopen("log.txt", "w");
-
         // Go through each mail folder.
         foreach($folders as $folder){
 
@@ -86,8 +84,6 @@ class ReadInboxTransaction {
                 $message->setFlag(['Seen']);
             }
         }
-
-//        fclose($myfile);
 
         return $this->getBonusTransactions();
     }
