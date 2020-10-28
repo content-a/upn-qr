@@ -20,5 +20,9 @@ final class ReadInboxTransactionTest extends TestCase {
         ]);
 
         $transactions = $readInboxTransaction->read();
+//        $file = fopen("log.txt", "w");
+//        foreach ($transactions as $t){
+//            fwrite($file, $t->getReference());
+//        }
     }
 }

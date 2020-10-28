@@ -2,7 +2,9 @@
 
 namespace UpnQr\Models;
 
+use Webklex\PHPIMAP\Attachment;
 use Webklex\PHPIMAP\ClientManager;
+use Webklex\PHPIMAP\Message;
 
 class ReadInboxTransaction {
     private $client;
@@ -43,7 +45,6 @@ class ReadInboxTransaction {
             $messages = $folder->query()->unseen()->leaveUnread()->get();
 
             foreach($messages as $message){
-
                 $attachments = $message->getAttachments();
 
                 // Go through xml attachments.
@@ -55,6 +56,7 @@ class ReadInboxTransaction {
 
                     // Go through each transaction.
                     foreach ($xml->BkToCstmrStmt->Stmt->Ntry as $row){
+
 
                         //  Paid by physical (regular) person.
                         if (!isset($row->NtryDtls->TxDtls->RltdPties->Dbtr))
@@ -77,6 +79,8 @@ class ReadInboxTransaction {
                         // Add transaction data to list.
                         $transaction = new BankTransaction($name, $reference, $amount);
                         $this->bonusTransactions[] = $transaction;
+
+
                     }
                 }
 
