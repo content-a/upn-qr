@@ -29,6 +29,22 @@ class ReadInboxTransaction {
     }
 
     /**
+     * Check connection.
+     *
+     * @return bool
+     */
+    public function checkConnection(){
+        try {
+            $this->client->connect();
+        }
+        catch(\Exception $e){
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * Read transactions from inbox.
      *
      * @return BankTransaction[]

@@ -36,10 +36,11 @@ class UpnQr {
         $this->imagine = new Imagine\Gd\Imagine();
 
         // Set upn template image.
-        $this->image = $this->imagine->open(__DIR__ . '../../../assets/upn-qr-min.png');
+        $base_directory = dirname(__DIR__, 2);
+        $this->image = $this->imagine->open($base_directory . '/assets/upn-qr-min.png');
 
         // Set font family, color and size.
-        $font_path = __DIR__ . '../../../assets/fonts/arial.ttf';
+        $font_path = $base_directory . '/assets/fonts/arial.ttf';
         $font_color = new Color('000');
         $this->font = new Font($font_path, 20, $font_color);
     }
