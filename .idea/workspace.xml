@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="70a78d81-afa6-4db0-9048-40657e7ab0e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/UpnQr.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/UpnQr.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +151,7 @@
       <workItem from="1603785541832" duration="8241000" />
       <workItem from="1603868911000" duration="3221000" />
       <workItem from="1603954926580" duration="4296000" />
-      <workItem from="1604041137441" duration="2831000" />
+      <workItem from="1604041137441" duration="4208000" />
     </task>
     <task id="LOCAL−00001" summary="First commit">
       <created>1603187727933</created>
@@ -244,7 +243,13 @@
       <option name="presentableId" value="LOCAL−00015" />
       <updated>1603877816205</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL−00016" summary="First commit">
+      <created>1604055365580</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1604055365580</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,10 +284,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603443503930" />
-    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1603877814732">
+    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1604055364664">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603877814732" />
+    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604055364664" />
     <state x="738" y="432" key="ComposerInitDialogKey" timestamp="1603263060247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -299,10 +304,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603783955425" />
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1603877817999">
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1604055368365">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603877817999" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604055368365" />
     <state x="544" y="0" width="1392" height="711" key="dock-window-1" timestamp="1603274829571">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
