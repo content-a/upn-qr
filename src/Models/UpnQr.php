@@ -141,6 +141,9 @@ class UpnQr {
         // Add qr code.
         $this->generate_qr();
 
+        // Resize image
+        $this->image->resize(new Box(1500, 708));
+
         // Save to path.
         $this->image->save($path);
     }
