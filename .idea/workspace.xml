@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70a78d81-afa6-4db0-9048-40657e7ab0e8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/UpnQr.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/UpnQr.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +152,7 @@
       <workItem from="1603868911000" duration="3221000" />
       <workItem from="1603954926580" duration="4296000" />
       <workItem from="1604041137441" duration="4208000" />
+      <workItem from="1604904974571" duration="425000" />
     </task>
     <task id="LOCAL−00001" summary="First commit">
       <created>1603187727933</created>
