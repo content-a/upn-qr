@@ -68,7 +68,18 @@ class ReadInboxTransaction {
                     if (strpos($attachment->getMimeType(), 'xml') == false)
                         continue;
 
-                    $xml = simplexml_load_string($attachment->getContent());
+                    $content = utf8_encode($attachment->getContent());
+
+                    // Remove last line from file, which contains parse error.
+                    $content = substr($content, 0, strrpos($content, "\n"));
+
+                    // We need this enabled to recognize parse errors.
+                    libxml_use_internal_errors(true);
+                    $xml = simplexml_load_string($content);
+
+                    // There was parse error.
+                    if(!isset($xml->BkToCstmrStmt))
+                        throw new \Exception("Napaka pri branju datoteke: {$attachment->getName()} pri mailu: {$message->getSubject()}");
 
                     // Go through each transaction.
                     foreach ($xml->BkToCstmrStmt->Stmt->Ntry as $row){

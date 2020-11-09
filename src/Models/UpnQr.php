@@ -142,7 +142,7 @@ class UpnQr {
         $this->generate_qr();
 
         // Resize image
-        $this->image->resize(new Box(1500, 708));
+        $this->image->resize(new Box(1300, 614));
 
         // Save to path.
         $this->image->save($path);
