@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70a78d81-afa6-4db0-9048-40657e7ab0e8" name="Default Changelist" comment="" />
+    <list default="true" id="70a78d81-afa6-4db0-9048-40657e7ab0e8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,7 +120,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="XML" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../minimax-php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -152,6 +154,7 @@
       <workItem from="1604041137441" duration="4208000" />
       <workItem from="1604904974571" duration="799000" />
       <workItem from="1604906508322" duration="4818000" />
+      <workItem from="1612424563772" duration="490000" />
     </task>
     <task id="LOCAL−00001" summary="First commit">
       <created>1603187727933</created>
@@ -261,7 +264,13 @@
       <option name="presentableId" value="LOCAL−00018" />
       <updated>1604911687593</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL−00019" summary="Added option to resize upn image.">
+      <created>1612424769522</created>
+      <option name="number" value="LOCAL−00019" />
+      <option name="presentableId" value="LOCAL−00019" />
+      <updated>1612424769522</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,48 +290,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="715" y="343" key="#Notifications" timestamp="1603784728167">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="715" y="343" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1603784728167" />
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603704426327">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603704426327" />
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603443503930">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603443503930" />
-    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1604911686390">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604911686390" />
-    <state x="738" y="432" key="ComposerInitDialogKey" timestamp="1603263060247">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="738" y="432" key="ComposerInitDialogKey/0.0.1920.1040@0.0.1920.1040" timestamp="1603263060247" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1604041468055">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604041468055" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1603697843446">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603697843446" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1603783955425">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603783955425" />
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1604911689113">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604911689113" />
-    <state x="544" y="0" width="1392" height="711" key="dock-window-1" timestamp="1603274829571">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="544" y="0" width="1392" height="711" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1603274829571" />
+    <MESSAGE value="Added option to resize upn image." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added option to resize upn image." />
   </component>
 </project>

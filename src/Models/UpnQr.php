@@ -134,7 +134,7 @@ class UpnQr {
      *
      * @param string $path to save file
      */
-    public function save($path, $width = 1300, $height = 614){
+    public function save($path, $width = 1200, $height = 566){
         // Sets texts.
         $this->setTexts();
 
