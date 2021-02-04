@@ -134,7 +134,7 @@ class UpnQr {
      *
      * @param string $path to save file
      */
-    public function save($path){
+    public function save($path, $width = 1300, $height = 614){
         // Sets texts.
         $this->setTexts();
 
@@ -142,7 +142,7 @@ class UpnQr {
         $this->generate_qr();
 
         // Resize image
-        $this->image->resize(new Box(1300, 614));
+        $this->image->resize(new Box($width, $height));
 
         // Save to path.
         $this->image->save($path);
