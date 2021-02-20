@@ -4,6 +4,7 @@ namespace UpnQr\Models;
 
 use Webklex\PHPIMAP\Attachment;
 use Webklex\PHPIMAP\ClientManager;
+use Webklex\PHPIMAP\Exceptions\ConnectionFailedException;
 use Webklex\PHPIMAP\Message;
 
 class ReadInboxTransaction {
@@ -37,7 +38,7 @@ class ReadInboxTransaction {
         try {
             $this->client->connect();
         }
-        catch(\Exception $e){
+        catch (ConnectionFailedException $e){
             return false;
         }
 

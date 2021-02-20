@@ -19,7 +19,10 @@ final class ReadInboxTransactionTest extends TestCase {
             'password'      => $_ENV['PASSWORD'],
         ]);
 
-        $transactions = $readInboxTransaction->read();
+//        if(!$readInboxTransaction->checkConnection())
+//            throw new \Exception("Ne dela");
+
+//        $transactions = $readInboxTransaction->read();
 //        $file = fopen("log.txt", "w");
 //        foreach ($transactions as $t){
 //            fwrite($file, $t->getReference());

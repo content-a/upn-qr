@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="70a78d81-afa6-4db0-9048-40657e7ab0e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/ReadInboxTransaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/ReadInboxTransaction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ReadInboxTransactionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ReadInboxTransactionTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +122,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="XML" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../minimax-php" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -154,7 +156,10 @@
       <workItem from="1604041137441" duration="4208000" />
       <workItem from="1604904974571" duration="799000" />
       <workItem from="1604906508322" duration="4818000" />
-      <workItem from="1612424563772" duration="490000" />
+      <workItem from="1612424563772" duration="2371000" />
+      <workItem from="1612438959729" duration="2111000" />
+      <workItem from="1613583516170" duration="198000" />
+      <workItem from="1613819526692" duration="2858000" />
     </task>
     <task id="LOCAL−00001" summary="First commit">
       <created>1603187727933</created>
