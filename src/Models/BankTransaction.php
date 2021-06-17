@@ -9,10 +9,14 @@ class BankTransaction {
 
     private $amount;
 
+    // NAMEN
+    private $purpose;
+
     public function __construct($name, $reference, $amount){
         $this->setName($name);
         $this->setReference($reference);
         $this->setAmount($amount);
+        $this->purpose = null;
     }
 
     public function setName($value){
@@ -33,6 +37,10 @@ class BankTransaction {
     public function setAmount($value){
         $value = (float) $value;
         $this->amount = $value;
+    }
+
+    public function setPurpose($value){
+        $this->purpose = $value;
     }
 
     public function getName(){
@@ -69,5 +77,9 @@ class BankTransaction {
      */
     public function getAmount(){
         return $this->amount;
+    }
+
+    public function getPurpose(){
+        return $this->purpose;
     }
 }

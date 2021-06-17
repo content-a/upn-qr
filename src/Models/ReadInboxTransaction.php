@@ -106,6 +106,11 @@ class ReadInboxTransaction {
 
                         // Add transaction data to list.
                         $transaction = new BankTransaction($name, $reference, $amount);
+
+                        // Add purpose if not empty.
+                        if(isset($row->NtryDtls->TxDtls->RmtInf->Strd->AddtlRmtInf) && !empty($row->NtryDtls->TxDtls->RmtInf->Strd->AddtlRmtInf))
+                            $transaction->setPurpose($row->NtryDtls->TxDtls->RmtInf->Strd->AddtlRmtInf);
+
                         $this->bonusTransactions[] = $transaction;
 
 
