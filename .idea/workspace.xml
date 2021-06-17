@@ -21,8 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="70a78d81-afa6-4db0-9048-40657e7ab0e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/BankTransaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/BankTransaction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/ReadInboxTransaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/ReadInboxTransaction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Models/UpnQr.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/UpnQr.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +162,7 @@
       <workItem from="1613978645012" duration="251000" />
       <workItem from="1623245952340" duration="181000" />
       <workItem from="1623665747322" duration="11000" />
-      <workItem from="1623914323395" duration="303000" />
+      <workItem from="1623914323395" duration="3608000" />
     </task>
     <task id="LOCAL−00001" summary="First commit">
       <created>1603187727933</created>
@@ -285,7 +284,13 @@
       <option name="presentableId" value="LOCAL−00020" />
       <updated>1613822633921</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL−00021" summary="Added purpose.">
+      <created>1623914825711</created>
+      <option name="number" value="LOCAL−00021" />
+      <option name="presentableId" value="LOCAL−00021" />
+      <updated>1623914825711</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,6 +312,7 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Added option to resize upn image." />
     <MESSAGE value="Read inbox check connection fixed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Read inbox check connection fixed." />
+    <MESSAGE value="Added purpose." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added purpose." />
   </component>
 </project>

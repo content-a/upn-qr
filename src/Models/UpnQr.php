@@ -135,6 +135,30 @@ class UpnQr {
      * @param string $path to save file
      */
     public function save($path, $width = 1200, $height = 566){
+        $this->create_upn($width, $height);
+
+        // Save to path.
+        $this->image->save($path);
+    }
+
+    /**
+     * Save image to selected path.
+     *
+     * @param string $path to save file
+     */
+    public function get($width = 1200, $height = 566){
+        $this->create_upn($width, $height);
+
+        // Save to path.
+        $this->image->get('png');
+    }
+
+    /**
+     * Save image to selected path.
+     *
+     * @param string $path to save file
+     */
+    public function create_upn($width = 1200, $height = 566){
         // Sets texts.
         $this->setTexts();
 
@@ -143,8 +167,5 @@ class UpnQr {
 
         // Resize image
         $this->image->resize(new Box($width, $height));
-
-        // Save to path.
-        $this->image->save($path);
     }
 }
