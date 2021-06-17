@@ -150,7 +150,7 @@ class UpnQr {
         $this->create_upn($width, $height);
 
         // Save to path.
-        $this->image->get('png');
+        return $this->image->get('png');
     }
 
     /**
