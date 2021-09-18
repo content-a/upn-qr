@@ -4,7 +4,7 @@
     "type": "library",
     "license": "MIT",
     "require": {
-        "imagine/imagine": "~0.5.0",
+        "imagine/imagine": "^1.0",
         "endroid/qr-code": "^3.9",
         "webklex/php-imap": "^2.2",
         "ext-simplexml": "*",
