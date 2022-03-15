@@ -2,10 +2,13 @@
 
 namespace UpnQr\Models;
 
+use Endroid\QrCode\Builder\Builder;
 use Endroid\QrCode\Color\Color;
 use Endroid\QrCode\Encoding\Encoding;
+use Endroid\QrCode\ErrorCorrectionLevel\ErrorCorrectionLevelHigh;
 use Endroid\QrCode\ErrorCorrectionLevel\ErrorCorrectionLevelLow;
 use Endroid\QrCode\QrCode;
+use Endroid\QrCode\RoundBlockSizeMode\RoundBlockSizeModeEnlarge;
 use Endroid\QrCode\RoundBlockSizeMode\RoundBlockSizeModeMargin;
 use Endroid\QrCode\Writer\PngWriter;
 use Imagine;
@@ -104,6 +107,7 @@ class UpnQr {
      *
      */
     public function generate_qr(){
+
         // Format price.
         $qr_price = number_format((float) $this->znesek, 2, ',', '');
         $qr_price = str_replace(",", "", $qr_price);
@@ -125,24 +129,19 @@ class UpnQr {
         for ($i = strlen($qr_string); $i < 411; $i++)
             $qr_string .= " ";
 
-        // Create a basic QR code
-        $qrCode = QrCode::create( $qr_string )
-            ->setEncoding( new Encoding( 'UTF-8' ) )
-            ->setErrorCorrectionLevel( new ErrorCorrectionLevelLow() )
-            ->setSize( 320 )
-            ->setMargin( 0 )
-            ->setRoundBlockSizeMode( new RoundBlockSizeModeMargin() )
-            ->setForegroundColor( new Color( 0, 0, 0 ) )
-            ->setBackgroundColor( new Color( 255, 255, 255 ) );
-
-//        $qrCode->setRoundBlockSize(false, QrCode::ROUND_BLOCK_SIZE_MODE_ENLARGE);
-        $writer = new PngWriter();
-        $result = $writer->write( $qrCode );
-        
+        $result = Builder::create()
+            ->writer(new PngWriter())
+            ->writerOptions([])
+            ->data($qr_string)
+            ->encoding(new Encoding('UTF-8'))
+            ->size(280)
+            ->margin(0)
+            ->roundBlockSizeMode(new RoundBlockSizeModeEnlarge())
+            ->build();
 
         // Add qr to upn image.
         $image_qr = $this->imagine->load($result->getString());
-        $this->image->paste($image_qr, new Point(598,88));
+        $this->image->paste($image_qr, new Point(585,75));
     }
 
     /**
