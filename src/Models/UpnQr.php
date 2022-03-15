@@ -2,11 +2,15 @@
 
 namespace UpnQr\Models;
 
+use Endroid\QrCode\Color\Color;
+use Endroid\QrCode\Encoding\Encoding;
+use Endroid\QrCode\ErrorCorrectionLevel\ErrorCorrectionLevelLow;
 use Endroid\QrCode\QrCode;
+use Endroid\QrCode\RoundBlockSizeMode\RoundBlockSizeModeMargin;
+use Endroid\QrCode\Writer\PngWriter;
 use Imagine;
 use Imagine\Gd\Font;
 use Imagine\Image\Box;
-use Imagine\Image\Color;
 use Imagine\Image\Point;
 use Imagine\Image\PointInterface;
 
@@ -41,8 +45,11 @@ class UpnQr {
 
         // Set font family, color and size.
         $font_path = $base_directory . '/assets/fonts/arial.ttf';
-        $font_color = new Color('000');
-        $this->font = new Font($font_path, 20, $font_color);
+
+        $palette = new Imagine\Image\Palette\RGB();
+        $color = $palette->color("#000");
+
+        $this->font = new Font($font_path, 20, $color);
     }
 
     /**
@@ -119,13 +126,22 @@ class UpnQr {
             $qr_string .= " ";
 
         // Create a basic QR code
-        $qrCode = new QrCode($qr_string);
-        $qrCode->setSize(320);
-        $qrCode->setRoundBlockSize(false, QrCode::ROUND_BLOCK_SIZE_MODE_ENLARGE);
-        $qrCode->setMargin(0);
+        $qrCode = QrCode::create( $qr_string )
+            ->setEncoding( new Encoding( 'UTF-8' ) )
+            ->setErrorCorrectionLevel( new ErrorCorrectionLevelLow() )
+            ->setSize( 320 )
+            ->setMargin( 0 )
+            ->setRoundBlockSizeMode( new RoundBlockSizeModeMargin() )
+            ->setForegroundColor( new Color( 0, 0, 0 ) )
+            ->setBackgroundColor( new Color( 255, 255, 255 ) );
+
+//        $qrCode->setRoundBlockSize(false, QrCode::ROUND_BLOCK_SIZE_MODE_ENLARGE);
+        $writer = new PngWriter();
+        $result = $writer->write( $qrCode );
+        
 
         // Add qr to upn image.
-        $image_qr = $this->imagine->load($qrCode->writeString());
+        $image_qr = $this->imagine->load($result->getString());
         $this->image->paste($image_qr, new Point(598,88));
     }
 
