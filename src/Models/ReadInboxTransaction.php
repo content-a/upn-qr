@@ -91,15 +91,19 @@ class ReadInboxTransaction {
                             continue;
 
                         // Reference does not exist
-                        if (!isset($row->NtryDtls->TxDtls->RmtInf->Strd->CdtrRefInf->Ref))
-                            continue;
+//                         if (!isset($row->NtryDtls->TxDtls->RmtInf->Strd->CdtrRefInf->Ref))
+//                             continue;
 
 
                         // Retrieve name.
                         $name = $row->NtryDtls->TxDtls->RltdPties->Dbtr->Nm;
 
                         // Retrieve reference.
-                        $reference = $row->NtryDtls->TxDtls->RmtInf->Strd->CdtrRefInf->Ref;
+                        if (isset($row->NtryDtls->TxDtls->RmtInf->Strd->CdtrRefInf->Ref))
+                            $reference = $row->NtryDtls->TxDtls->RmtInf->Strd->CdtrRefInf->Ref;
+                        // Set impossible reference.
+                        else
+                            $reference = "SI00-XXXXYYYY";
 
                         // Retrieve amount.
                         $amount = $row->Amt;
